@@ -1,0 +1,13 @@
+# Example only — do not commit real credentials.
+# Replace all placeholders before using.
+tunnel: YOUR_TUNNEL_ID
+credentials-file: /home/YOUR_USER/.cloudflared/YOUR_TUNNEL_ID.json
+
+ingress:
+  - hostname: YOUR_DOMAIN
+    service: http://localhost:3670
+
+  - hostname: media.YOUR_DOMAIN
+    service: http://localhost:8096
+
+  - service: http_status:404
