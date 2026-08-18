@@ -1,0 +1,33 @@
+# Secrets
+.env
+*.env
+cert.pem
+*.pem
+*.key
+*.json
+
+# Cloudflare credentials
+.cloudflared/
+**/.cloudflared/
+credentials.json
+*.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local databases / runtime data
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
